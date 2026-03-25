@@ -46,4 +46,8 @@ public class SignupPage {
     public void clickNext() {
         driver.findElement(nextButton).click();
     }
+
+    public boolean isnextButtonEnabled() {
+        return driver.findElement(nextButton).isEnabled();
+    }
 }
